@@ -1,7 +1,5 @@
 # Zhao-JSON : A JSON parser/generator in C++17
 
-[![Actions](https://github.com/moonlightleaf/zhao-json/actions/workflows/cmake-single-platform.yml/badge.svg)](https://github.com/moonlightleaf/zhao-json/actions/workflows/cmake-single-platform.yml)
-
 ## 项目简介
 
 zhao-json是一款基于C++17开发的header-only JSON解析/生成器，采用递归下降的方式进行解析，支持`DOM(Document Object Model)`和`SAX(Simple API for XML)`两种API风格:
@@ -228,7 +226,7 @@ $ mkdir build && cd build
 $ cmake [-DCMAKE_BUILD_TESTS=1] [-DCMAKE_BUILD_BENCHMARK=1] [-DCMAKE_BUILD_EXAMPLES=1] ..
 $ make
 ```
-可以通过选择是否添加`-DCMAKE_BUILD_TESTS=1`、`-DCMAKE_BUILD_BENCHMARK=1`、`-DCMAKE_BUILD_EXAMPLES=1`选项，来决定是否要对`test`、`bench`和`example`目录下的文件进行编译。zhao-json只包含头文件，在使用时，只需将zhao-json的头文件拷贝至新项目的`include`路径下即可。
+可以通过选择是否添加`-DCMAKE_BUILD_TESTS=1`、`-DCMAKE_BUILD_BENCHMARK=1`、`-DCMAKE_BUILD_EXAMPLES=1`选项，来决定是否要对`test`、`bench`和`example`目录下的文件进行编译(默认状态下会编译example)。zhao-json只包含头文件，在使用时，只需将zhao-json的头文件拷贝至新项目的`include`路径下即可。
 
 ## 参考
 
